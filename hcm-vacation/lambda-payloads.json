@@ -1,0 +1,21 @@
+{
+    "botfactoryhcmferias": {
+        "lambda": {
+            "body": "eyJ0ZXN0IjoiYm9keSJ9",
+            "resource": "/{proxy+}",
+            "path": "/path/to/resource",
+            "httpMethod": "GET",
+            "queryStringParameters": {
+                "foo": "bar",
+                "q": "meus-liderados"
+            },
+            "headers": {
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                "Accept-Encoding": "gzip, deflate, sdch",
+                "Accept-Language": "en-US,en;q=0.8",
+                "X-username": "admin@tomaz.interno",
+                "Authorization": "Bearer ee975d0cf7827714ac5a9789eb53bf1b"
+            }
+        }
+    }
+}
