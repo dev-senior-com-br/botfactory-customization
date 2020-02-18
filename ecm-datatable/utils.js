@@ -19,33 +19,7 @@ function getToken(defaultToken) {
       return resolve(defaultToken);      
     }
 
-    let post_data_auth = ' { "accessKey" : "B3EeRPq1g7AYD0gBcpfvT2I4ieoa",   "secret": "LjTzU13Vw_fHbF3zuAQFRsLXP_ga",   "tenantName": "workflow" }';
-
-    let myToken = defaultToken;
-    const optionsAuth = {
-      hostname: 'platform-homologx.senior.com.br',
-      port: 443,
-      path: '/t/senior.com.br/bridge/1.0/anonymous/rest/platform/authentication/actions/loginWithKey',
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-    const reqAuth = https.request(optionsAuth, res => {
-      res.on('data', data => {
-        let json_token = JSON.parse(data).jsonToken;
-        let access_token = JSON.parse(json_token).access_token;
-        myToken = 'Bearer ' + access_token ;
-        resolve(myToken);
-      });
-
-      res.on('error', error => {
-        myToken = -1;
-        resolve(myToken);
-      });
-    });
-    reqAuth.write(post_data_auth);
-    reqAuth.end();
+    return resolve("No token");
 
   });
 }
