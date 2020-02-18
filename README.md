@@ -7,7 +7,7 @@ Fornece funções customizadas para uso nas integrações do botfcatory
 
 ## bot-templates
 
-Lista de Modelos Padrões do SeniorX Botfactory [Link](http://git.senior.com.br/arquitetura/botfactory-customization/tree/master/ecm-datatable).
+Lista de Modelos Padrões do SeniorX Botfactory [Link](http://git.senior.com.br/arquitetura/botfactory-customization/tree/master/bot-templates).
 
 
 ## hcm-vacation
